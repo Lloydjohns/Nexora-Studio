@@ -28,20 +28,19 @@ export function Hero() {
           {/* BUTTONS */}
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             
-            <Button asChild size="lg" className="w-full rounded-full px-6 sm:w-auto">
+            <Button size="lg" className="w-full rounded-full px-6 sm:w-auto">
               <Link href="/contact" className="flex items-center gap-2">
                 Book a Discovery Call
                 <ArrowRight className="size-4" />
               </Link>
             </Button>
-
-            <Button asChild variant="outline" size="lg" className="w-full rounded-full px-6 sm:w-auto">
+            <Button variant="outline" size="lg" className="w-full rounded-full px-6 sm:w-auto">
               <Link href="/services">
                 View Services
               </Link>
             </Button>
 
-            <Button asChild variant="ghost" size="lg" className="w-full rounded-full px-6 sm:w-auto">
+            <Button variant="ghost" size="lg" className="w-full rounded-full px-6 sm:w-auto">
               <Link href="/products" className="flex items-center gap-2">
                 <ShoppingBag className="size-4" />
                 Shop Digital Products
@@ -71,7 +70,7 @@ export function Hero() {
 
         {/* RIGHT IMAGE */}
         <div className="relative">
-          <div className="relative aspect-[4/5] overflow-hidden rounded-3xl border border-border bg-muted sm:aspect-[5/4] lg:aspect-[4/5]">
+          <div className="relative aspect-4/5 overflow-hidden rounded-3xl border border-border bg-muted sm:aspect-5/4 lg:aspect-4/5">
             <Image
               src="/images/hero-workspace.png"
               alt="A modern creative studio desk with a laptop showing a content calendar, a phone with a social media grid, and notebooks"
@@ -82,7 +81,7 @@ export function Hero() {
             />
           </div>
 
-          <div className="absolute -bottom-4 -left-4 hidden max-w-[220px] rounded-2xl border border-border bg-card p-4 shadow-sm sm:block">
+          <div className="absolute -bottom-4 -left-4 hidden max-w-55 rounded-2xl border border-border bg-card p-4 shadow-sm sm:block">
             <p className="text-sm font-semibold text-foreground">
               Consistent. Transparent.
             </p>

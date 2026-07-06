@@ -33,13 +33,11 @@
     "typescript": "5.7.3"
   },
   "overrides": {
-    "hono": "4.12.25",
-    "postcss": "^8.5.16"
+    "hono": "4.12.25"
   },
   "pnpm": {
     "overrides": {
-      "hono": "4.12.25",
-      "postcss": "^8.5.16"
+      "hono": "4.12.25"
     }
   }
 }

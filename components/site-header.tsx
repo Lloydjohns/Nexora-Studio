@@ -17,10 +17,10 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-5 lg:px-8">
         <Link href="/" className="flex items-baseline gap-1.5" aria-label={`${siteConfig.name} home`}>
           <span className="font-serif text-xl font-semibold tracking-tight text-foreground">
-            Digital Agency
+            Nexora 
           </span>
           <span className="text-xs font-medium uppercase tracking-[0.18em] text-primary">
-            Company
+            Studio
           </span>
         </Link>
 
@@ -41,7 +41,7 @@ export function SiteHeader() {
 
         <div className="hidden md:block">
           <Button
-            render={<Link href="/contact" />}
+            render={<Link href="/book" />}
             size="lg"
             className="rounded-full px-5"
           >
@@ -77,7 +77,7 @@ export function SiteHeader() {
               </Link>
             ))}
             <Button
-              render={<Link href="/contact" onClick={() => setOpen(false)} />}
+              render={<Link href="/book" onClick={() => setOpen(false)} />}
               size="lg"
               className="mt-2 w-full rounded-full"
             >

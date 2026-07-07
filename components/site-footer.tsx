@@ -9,10 +9,10 @@ export function SiteFooter() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-baseline gap-1.5">
               <span className="font-serif text-xl font-semibold tracking-tight text-foreground">
-                Digital Agency
+                Nexora
               </span>
               <span className="text-xs font-medium uppercase tracking-[0.18em] text-primary">
-                Company
+                Studio
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">

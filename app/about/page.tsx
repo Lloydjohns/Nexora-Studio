@@ -2,158 +2,252 @@ import type { Metadata } from 'next'
 import Image from 'next/image'
 import { PageHeader } from '@/components/page-header'
 import { CtaSection } from '@/components/cta-section'
-import { Palette, Megaphone, Calculator } from 'lucide-react'
+import { Palette, Megaphone, Calculator, Code2 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About Us | Digital Agency Company',
+  title: 'About Us | Nexora Studio',
   description:
-    'Meet the 3-person team behind Digital Agency Company—collaborative, efficient, and organized across creative production, social media, and operations.',
+    'Meet the team behind Nexora Studio. A creative digital studio focused on consistency, strategy, and scalable growth.',
 }
 
+/* ================= TEAM ================= */
 const team = [
   {
-    name: 'Liza Reyes',
-    role: 'Digital Products & Creative Production',
+    name: 'Jhie Anne Ipio',
+    role: 'Creative Director',
     icon: Palette,
     image: '/images/team-1.png',
-    bio: 'Leads product design and content creation—turning ideas into polished templates, graphics, and creative assets.',
+    bio: 'Leads design systems, branding, and creative production.',
   },
   {
-    name: 'Miguel Bautista',
-    role: 'Social Media Management',
+    name: 'Maria Leonabelle Santos',
+    role: 'Social Media Strategist',
     icon: Megaphone,
     image: '/images/team-2.png',
-    bio: 'Owns strategy, content calendars, and community management—keeping every client brand consistent and growing.',
+    bio: 'Builds content strategies and grows brand visibility.',
   },
   {
-    name: 'Andrea Villanueva',
-    role: 'Operations & Accounting',
+    name: 'John Matthew Santos',
+    role: 'Operations & Finance',
     icon: Calculator,
     image: '/images/team-3.png',
-    bio: 'Keeps everything running smoothly—onboarding, reporting, invoicing, and the systems that make us reliable.',
-  },
-]
-
-const principles = [
-  {
-    title: 'Collaborative',
-    description:
-      'Three specialists working as one team, so every project gets creative, strategic, and operational care.',
+    bio: 'Handles systems, onboarding, and reporting workflows.',
   },
   {
-    title: 'Efficient',
-    description:
-      'Lean by design. Clear systems mean we move fast without dropping quality or communication.',
-  },
-  {
-    title: 'Organized',
-    description:
-      'Documented processes for onboarding, delivery, and reporting keep everything transparent.',
+    name: 'Jhon Lloyd Borres',
+    role: 'Web & Systems Developer',
+    icon: Code2,
+    image: '/images/team-4.png',
+    bio: 'Builds websites and automation systems.',
   },
 ]
 
 export default function AboutPage() {
   return (
     <>
+      {/* ================= HEADER ================= */}
       <PageHeader
         eyebrow="About us"
-        title="A small studio built for big consistency"
-        description="Digital Agency Company is run by a focused three-person team. We combine creative production, social media strategy, and solid operations under one roof—so working with us feels organized from the very first message."
+        title="A modern studio built for consistency"
+        description="Helping brands stay visible and creators work smarter through systems, strategy, and design."
       />
 
-      <section className="px-5 py-20 lg:px-8">
-        <div className="mx-auto grid max-w-6xl gap-10 lg:grid-cols-2 lg:gap-16">
-          <div>
-            <h2 className="text-balance font-serif text-3xl font-semibold leading-tight text-foreground">
-              We are building for both service and scale
-            </h2>
-          </div>
-          <div className="space-y-4 text-pretty leading-relaxed text-muted-foreground">
-            <p>
-              We started Digital Agency Company with a simple belief: brands grow when
-              they show up consistently, and creators thrive when they have the
-              right tools. That is why we run two complementary offers—hands-on
-              social media management and scalable digital products.
-            </p>
-            <p>
-              Based in the Philippines and serving clients locally and
-              internationally, we care about consistency, transparency, and
-              measurable results. No fluff, no guesswork—just clear systems and
-              honest communication.
-            </p>
-          </div>
+      {/* ================= INTRO ================= */}
+      <section className="px-5 py-24 lg:px-8">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="font-serif text-3xl font-semibold">
+            About Nexora Studio
+          </h2>
+          <p className="mt-6 text-muted-foreground leading-relaxed">
+            Nexora Studio is a small, focused digital agency helping brands stay
+            visible—and helping creators and business owners work smarter. We
+            combine hands-on social media management with practical digital
+            products, creating two powerful ways to grow under one brand.
+          </p>
+          <p className="mt-4 text-muted-foreground">
+            Growth doesn’t come from random effort—it comes from consistent
+            execution, clear systems, and intentional strategy.
+          </p>
         </div>
       </section>
 
-      <section className="bg-secondary/40 px-5 py-20 lg:px-8">
+      {/* ================= WHO WE ARE ================= */}
+      <section className="bg-secondary/40 px-5 py-24 lg:px-8">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="font-serif text-3xl font-semibold">Who We Are</h2>
+          <p className="mt-6 text-muted-foreground leading-relaxed">
+            We are a process-driven team based in the Philippines, working with
+            clients locally and worldwide. Each of us specializes in a core
+            area—creative production, strategy, and operations.
+          </p>
+
+          <ul className="mt-6 space-y-3 text-muted-foreground">
+            <li>• A tight, collaborative team</li>
+            <li>• Clear roles and accountability</li>
+            <li>• Organized systems and workflows</li>
+            <li>• Consistency over hype</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* ================= WHAT WE DO ================= */}
+      <section className="px-5 py-24 lg:px-8">
         <div className="mx-auto max-w-6xl">
-          <div className="max-w-2xl">
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-primary">
-              Meet the team
+          <h2 className="font-serif text-3xl font-semibold">
+            What We Do
+          </h2>
+          <p className="mt-4 text-muted-foreground">
+            Two complementary offers. One clear goal: growth.
+          </p>
+
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
+            {/* SMM */}
+            <div className="border rounded-2xl p-8 bg-card">
+              <h3 className="font-semibold text-xl">
+                Social Media Management
+              </h3>
+              <p className="mt-3 text-muted-foreground">
+                Hands-on, retainer-based management that keeps your brand
+                consistent and growing.
+              </p>
+
+              <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                <li>• Content planning & strategy</li>
+                <li>• Captions, graphics & reels</li>
+                <li>• Posting consistency</li>
+                <li>• Community engagement</li>
+                <li>• Monthly reporting</li>
+              </ul>
+            </div>
+
+            {/* PRODUCTS */}
+            <div className="border rounded-2xl p-8 bg-card">
+              <h3 className="font-semibold text-xl">
+                Digital Products
+              </h3>
+              <p className="mt-3 text-muted-foreground">
+                Practical tools designed to save time and simplify workflows.
+              </p>
+
+              <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                <li>• Canva templates & kits</li>
+                <li>• Notion systems</li>
+                <li>• Content calendars</li>
+                <li>• Planners & printables</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= APPROACH ================= */}
+      <section className="bg-secondary/40 px-5 py-24 lg:px-8">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="font-serif text-3xl font-semibold">
+            Our Approach
+          </h2>
+
+          <div className="mt-10 grid gap-6 sm:grid-cols-2">
+            <div className="p-6 border rounded-xl bg-card">
+              <h4 className="font-semibold">Consistency</h4>
+              <p className="text-muted-foreground text-sm mt-2">
+                Showing up regularly builds trust and visibility.
+              </p>
+            </div>
+
+            <div className="p-6 border rounded-xl bg-card">
+              <h4 className="font-semibold">Transparency</h4>
+              <p className="text-muted-foreground text-sm mt-2">
+                Clear communication and reporting every step.
+              </p>
+            </div>
+
+            <div className="p-6 border rounded-xl bg-card">
+              <h4 className="font-semibold">Organization</h4>
+              <p className="text-muted-foreground text-sm mt-2">
+                Structured workflows ensure smooth delivery.
+              </p>
+            </div>
+
+            <div className="p-6 border rounded-xl bg-card">
+              <h4 className="font-semibold">Efficiency</h4>
+              <p className="text-muted-foreground text-sm mt-2">
+                We focus only on what drives results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= TEAM ================= */}
+      <section className="px-5 py-24 lg:px-8">
+        <div className="mx-auto max-w-6xl grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+          {team.map((member) => (
+            <div key={member.name} className="rounded-3xl border bg-card overflow-hidden">
+              <div className="relative h-[260px] w-full">
+                <Image src={member.image} alt={member.name} fill className="object-cover" />
+              </div>
+              <div className="p-6">
+                <member.icon className="size-4 text-primary" />
+                <h3 className="mt-3 font-serif text-xl">{member.name}</h3>
+                <p className="text-xs text-muted-foreground">{member.role}</p>
+                <p className="mt-2 text-sm text-muted-foreground">{member.bio}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ================= PROCESS ================= */}
+      <section className="bg-secondary/40 px-5 py-24 lg:px-8">
+        <div className="mx-auto max-w-4xl space-y-6">
+          <h2 className="font-serif text-3xl font-semibold text-center">
+            How We Work
+          </h2>
+
+          {[
+            'Inquiry',
+            'Discovery Call',
+            'Proposal',
+            'Onboarding',
+            'Content Planning',
+            'Management & Reporting',
+          ].map((step, i) => (
+            <div key={i} className="border rounded-xl p-6 bg-card">
+              <p className="font-semibold text-primary">
+                {String(i + 1).padStart(2, '0')} — {step}
+              </p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ================= MISSION / VISION ================= */}
+      <section className="px-5 py-24 lg:px-8">
+        <div className="mx-auto max-w-5xl grid gap-8 md:grid-cols-2">
+          <div className="border rounded-2xl p-8 bg-card">
+            <h3 className="font-serif text-xl font-semibold">Mission</h3>
+            <p className="mt-3 text-muted-foreground">
+              To help brands grow through consistent content, clear strategy,
+              and reliable systems.
             </p>
-            <h2 className="mt-4 text-balance font-serif text-3xl font-semibold leading-tight text-foreground sm:text-4xl">
-              Three roles, one shared standard
-            </h2>
           </div>
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
-            {team.map((member) => (
-              <div
-                key={member.name}
-                className="overflow-hidden rounded-3xl border border-border bg-card"
-              >
-                <div className="relative aspect-[4/5] bg-muted">
-                  <Image
-                    src={member.image || '/placeholder.svg'}
-                    alt={`Portrait of ${member.name}, ${member.role}`}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 33vw"
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center gap-2 text-primary">
-                    <member.icon className="size-4" />
-                    <span className="text-xs font-semibold uppercase tracking-[0.12em]">
-                      {member.role}
-                    </span>
-                  </div>
-                  <h3 className="mt-3 font-serif text-xl font-semibold text-foreground">
-                    {member.name}
-                  </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {member.bio}
-                  </p>
-                </div>
-              </div>
-            ))}
+
+          <div className="border rounded-2xl p-8 bg-card">
+            <h3 className="font-serif text-xl font-semibold">Vision</h3>
+            <p className="mt-3 text-muted-foreground">
+              To become a trusted digital partner known for structured,
+              transparent, and results-focused work.
+            </p>
           </div>
         </div>
       </section>
 
-      <section className="px-5 py-20 lg:px-8">
-        <div className="mx-auto max-w-6xl">
-          <div className="grid gap-6 sm:grid-cols-3">
-            {principles.map((p) => (
-              <div
-                key={p.title}
-                className="rounded-2xl border border-border bg-card p-7"
-              >
-                <h3 className="font-serif text-xl font-semibold text-foreground">
-                  {p.title}
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {p.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      {/* ================= CTA ================= */}
       <CtaSection
         eyebrow="Work with us"
-        title="Let's see if we're a great fit"
-        description="Every good partnership starts with a conversation. Book a discovery call and meet the team."
+        title="Let’s build something consistent"
+        description="Start a conversation and let’s map out a clear plan for your brand."
       />
     </>
   )

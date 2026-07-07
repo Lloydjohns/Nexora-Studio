@@ -1,7 +1,7 @@
 export const siteConfig = {
-  name: 'Digital Agency Company',
+  name: 'Nexora Studio',
   tagline: 'Social + Digital Studio',
-  email: 'hello@amihanstudio.com',
+  email: 'nexorastudio@gmail.com',
   location: 'Manila, Philippines · Serving clients worldwide',
   socials: [
     { label: 'Instagram', href: 'https://instagram.com' },
@@ -20,6 +20,6 @@ export const navLinks = [
   { label: 'About', href: '/about' },
   { label: 'Services', href: '/services' },
   { label: 'Digital Products', href: '/products' },
-  { label: 'Portfolio', href: '/portfolio' },
+  { label: 'Web Projects', href: '/webprojects' },
   { label: 'Contact', href: '/contact' },
 ]

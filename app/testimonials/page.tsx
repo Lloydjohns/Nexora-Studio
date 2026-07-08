@@ -4,7 +4,7 @@ import { TestimonialsSection } from '@/components/sections/testimonials-section'
 import { CtaSection } from '@/components/cta-section'
 
 export const metadata: Metadata = {
-  title: 'Testimonials | Digital Agency Company',
+  title: 'Testimonials | Nexora Studio',
   description:
     'Read written reviews and client feedback from the brands we work with.',
 }

@@ -5,9 +5,9 @@ import { SiteFooter } from '@/components/site-footer'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Digital Agency Company | Social Media Management & Digital Products',
+  title: 'Nexora Studio | Social Media Management & Digital Products',
   description:
-    'Digital Agency Company is a 3-person digital agency helping brands stay visible with organized social media management and time-saving digital products.',
+    'Nexora Studio is a 3-person digital agency helping brands stay visible with organized social media management and time-saving digital products.',
   generator: 'v0.app',
   icons: {
     icon: [

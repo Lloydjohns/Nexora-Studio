@@ -7,7 +7,7 @@ import { CtaSection } from '@/components/cta-section'
 import { Button } from '@/components/ui/button'
 
 export const metadata: Metadata = {
-  title: 'Social Media Management Services | Digital Agency Company',
+  title: 'Social Media Management Services | Nexora Studio',
   description:
     'Retainer-based social media management packages: Basic, Standard, and Premium. Clear deliverables, monthly reporting, and transparent payment terms.',
 }

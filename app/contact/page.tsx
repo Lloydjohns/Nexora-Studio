@@ -5,7 +5,7 @@ import { ContactForm } from '@/components/contact-form'
 import { siteConfig } from '@/lib/site'
 
 export const metadata: Metadata = {
-  title: 'Contact | Amihan Studio',
+  title: 'Contact | Nexora Studio',
   description:
     'Get in touch to book a discovery call, inquire about social media management, or ask about our digital products.',
 }

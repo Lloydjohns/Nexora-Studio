@@ -73,10 +73,10 @@ const goals = [
 ]
 
 const budgets = [
-  'Under $1,000',
-  '$1,000 - $3,000',
-  '$3,000 - $5,000',
-  '$5,000+',
+  'Under ₱1,000',
+  '₱1,000 - ₱3,000',
+  '₱3,000 - ₱5,000',
+  '₱5,000+',
   'Not sure yet',
 ]
 
@@ -270,7 +270,7 @@ export default function BookingPage() {
                         ))}
                       </ul>
                       <p className="mt-auto pt-6 font-serif text-3xl font-semibold text-foreground">
-                        ${service.price}
+                        ₱{service.price}
                       </p>
                     </button>
                   )
@@ -547,7 +547,7 @@ export default function BookingPage() {
                     Session fee
                   </span>
                   <span className="font-serif text-3xl font-semibold text-foreground">
-                    ${selectedService.price}
+                    ₱{selectedService.price}
                   </span>
                 </div>
                 <p className="mt-3 text-xs leading-relaxed text-muted-foreground">
